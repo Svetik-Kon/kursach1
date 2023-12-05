@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <link rel = "stylesheet" href = "style1.css">
+    <!-- <link rel = "stylesheet" href = "style4.css"> -->
+    <meta http-equip = "X-UA-Compatible" content = "IE = edge">
+    <meta name = "viewport" content = "widht= device-width, initial-scale = 1/0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel = "icon" href = "C:\Users\sveti\Desktop\icons8-обелиск-64.png" type="image/x-icon">
+    <title>Книжный магазин</title>
+  </head>
+  </head>
+  <body  onload="createCaptcha()">
+         <header class="transparent-header">
+         <div class="logo">
+
+         <h1>Книжный магазин "Обелиск"</h1>
+         </div>
+         <nav>
+           <ul>
+             <li><a href="index.html">Главная </a></li>
+             <li><a href="about.html">О нас</a></li>
+             <li><a href="allbooks.html">Книги</a></li>
+             <li><a  href = "comics.html">Комиксы</a></li>
+             <li><a  href = "buy.html"> Корзина </a></li>
+
+           </ul>
+         </nav>
+         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+       </header>
+
+        <div class = "reg">
+        <div class="form-container">
+          <h1>Войдите в аккаунт</h1>
+        <form id="loginForm" onsubmit="validateCaptcha()">
+        <div class="form-field email">
+        <input type="email" id="email" placeholder="Почта"><br>
+          </div>
+          <div class="form-field name">
+        <input type="password" id="password" placeholder="Пароль"><br>
+      </div>
+
+      <div class="submit-button">
+        <input type="button" id="loginButton" value="Войти" class = "login-button"><br>
+          </div>
+        <a href="#" id="forgotPassword" >Забыли пароль?</a>
+      </div>
+
+    </form>
+  </div>
+      <script src="scripts.js"></script>
+
+</body>
+</html>

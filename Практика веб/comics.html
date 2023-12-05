@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel = "stylesheet" href = "new.css">
+    <link rel = "stylesheet" href = "style.css">
+    <meta charset = "utf-8">
+    <meta http-equip = "X-UA-Compatible" content = "IE = edge">
+    <meta name = "viewport" content = "widht= device-width, initial-scale = 1/0">
+    <link rel = "icon" href = "C:\Users\sveti\Desktop\icons8-обелиск-64.png" type="image/x-icon">
+    <title>Книжный магазин</title>
+  </head>
+  <body>
+    <header class="transparent-header">
+    <div class="logo">
+
+    <h1>Книжный магазин "Обелиск"</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная </a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="allbooks.html">Книги</a></li>
+        <li><a  href = "comics.html">Комиксы</a></li>
+        <li><a  href = "buy.html"> Корзина </a></li>
+
+      </ul>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </header>
+
+
+  <section>
+
+
+    <div class="cards-wrapper">
+  <h2>Категории наших товаров</h2>
+    <div class="card-container">
+      <div class="card">
+          <img src="манга.jpg" alt="Card 1">
+          <div class="card-content">
+              <h3 class="card-title">Манга</h3>
+              <p class="card-description">Манга -это комиксы или графические романы, происходящие из Японии. Большая часть манги соответствует стилю, разработанному в Японии в конце 19 века.  </div>
+      </div>
+      <div class="card">
+          <img src="комиксы.jpg" alt="Card 2">
+          <div class="card-content">
+              <h3 class="card-title">Комиксы</h3>
+              <p class="card-description">Рисованная история, рассказ в картинках. Комикс сочетает в себе черты таких видов искусства, как литература и изобразительное искусство, иногда используется в печатных СМИ  </div>
+      </div>
+      <div class="card">
+          <img src="ранобэ.jpg" alt="Card 3">
+          <div class="card-content">
+              <h3 class="card-title">Ранобэ</h3>
+              <p class="card-description">Ранобэ – японские романы, рассчитанные на молодую аудиторию и тех, кому нравятся развлекательные истории. Из-за простого сюжета ранобэ можно отнести к японскому Young Adult.  </div>
+      </div>
+</div>
+</div>
+</section>
+
+<article class = "news">
+  <h2>Издательства комиксов</h2>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="марвел.jpg" alt="Изображение" width="250px">
+      </div>
+      <div class="grid-item">
+        <p><h2> Марвел </h2></p>
+        Вселенная Marvel - вымышленная общая вселенная, в которой происходят истории большинства американских комиксов и других средств массовой информации, опубликованных Marvel Comics.</p>
+
+          <div class="frame">
+            <button class="custom-btn btn-3" id="incrementButton" onclick="redirectToUrl('https://www.marvel.com/#')">
+    <span>Узнать больше</span>
+  </button>
+</div>
+</div>
+</div>
+
+<div class="grid-container">
+  <div class="grid-item">
+    <p><h2> DC </h2></p>
+    Одно из крупнейших и наиболее популярных издательств комиксов. Издательство было куплено компанией Warner Bros. Entertainment в 1969 году.</p>
+    <div class="frame">
+      <button class="custom-btn btn-3" id="incrementButton" onclick="redirectToUrl('https://www.dc.com/')">
+<span>Узнать больше</span>
+</button>
+</div>
+  </div>
+  <div class="grid-item">
+    <img src="dc.jpg" alt="Изображение" width="250px">
+</div>
+</div>
+
+<div class="grid-container">
+  <div class="grid-item">
+    <img src="imgpreview.jfif" alt="Изображение" width="250px">
+  </div>
+  <div class="grid-item">
+    <p><h2> Bubble </h2></p>
+    Bubble Comics — специализирующийся на комиксах российский издательский дом, созданный журналистом Артёмом Габреляновым в 2011 году. Является крупнейшим издательством оригинальных комиксов в России</p>
+
+      <div class="frame">
+        <button class="custom-btn btn-3" id="incrementButton" onclick="redirectToUrl('https://bubble.ru/')">
+<span>Узнать больше</span>
+</button>
+</div>
+</div>
+</div>
+
+</article>
+
+<section>
+    <h2>Топ 10 лучших комиксов</h2>
+    <div class="gallery">
+        <div class="item small" data-caption="Хранители">
+            <img src="C:\Users\sveti\Pictures\image1.jpeg" alt="Изображение 1">
+        </div>
+
+        <div class="item large" data-caption="Убийственная шутка">
+            <img src="C:\Users\sveti\Pictures\image2.jpeg" alt="Изображение 2">
+        </div>
+        <div class="item small" data-caption="Сказки">
+            <img src="C:\Users\sveti\Pictures\image3.jpeg" alt="Изображение 3">
+        </div>
+        <div class="item small" data-caption="Ходячие мертвецы">
+            <img src="C:\Users\sveti\Pictures\image4.jpeg" alt="Изображение 4">
+        </div>
+        <div class="item small" data-caption="Скотт Пилигрим">
+            <img src="C:\Users\sveti\Pictures\image5.jpeg" alt="Изображение 5">
+        </div>
+        <div class="item small" data-caption="Маус">
+            <img src="Новая папка\маус.jpg" alt="Изображение 6">
+        </div>
+        <div class="item small" data-caption="Майор Гром">
+            <img src="Новая папка\чумнойдоктор.jpg" alt="Изображение 6">
+        </div>
+        <div class="item large" data-caption="Берсерк">
+            <img src="Новая папка\берсерк.jpg" alt="Изображение 6">
+        </div>
+        <div class="item small" data-caption="Предания Олимпа">
+            <img src="Новая папка\предания.jpeg" alt="Изображение 6">
+        </div>
+        <div class="item large" data-caption="Ван Пис">
+            <img src="Новая папка\ванпис2.jpg" alt="Изображение 6">
+        </div>
+      </div>
+    </div>
+
+
+    <script src="script.js" type="text/javascript"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <footer>
+        <div class = "foot">
+          <div class = "contact-info">
+              <a name = "конец страницы" id = "связь"><h4>Cвязаться с нами</h4></a>
+              <ul>
+            <address>
+              <li><a href = "tel:89347285674">по телефону</a><br></li>
+              <li><a href = "mailto:obeliskbooks@gmail.com">написать письмо</a><br></li>
+              </address>
+              <li><a href = "#">Адреса магазинов</a><br></li>
+
+          </div>
+            <div class="quick-links">
+                <h4>Быстрые ссылки</h4>
+                <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Помощь</a></li>
+                  <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+              </div>
+              <a href = "#начало"> Вернуться в начало страницы</a>
+            </div>
+            <div class="spaci">
+              <div class="body1">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+                <div class="middle">
+                  <a class='btn' href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                   <a class='btn' href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                   <a class='btn' href="#">
+                    <i class="fab fa-google"></i>
+                  </a>
+                   <a class='btn' href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                   <a class='btn' href="#">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+      <script src="scripts.js"></script>
+        <!-- Добавьте другие изображения здесь -->
+    </div>
+  </section>
+  </body>
+</html>

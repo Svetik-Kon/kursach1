@@ -1,0 +1,790 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Comfortaa&family=Mulish:wght@300&family=Rubik:wght@300&display=поменятьместами');
+h1, h2, h3, h4{
+  font-family: "Ubuntu";
+  text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+     margin: 0;
+     padding: 0;
+     font-family: 'Lora', sans-serif;
+     background-image: url('backgroun2.jpg');
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+}
+
+
+.transparent-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s ease;
+    z-index: 1000; /* Устанавливаем z-index, чтобы шапка оставалась выше контента */
+    display: flex;
+    justify-content: space-between; /* Равномерно распределить элементы по горизонтали */
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .logo h1 {
+    margin: 0;
+    color: #fff;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    white-space: nowrap;
+  }
+
+  nav ul li {
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    display: inline-block;
+  }
+
+  nav ul li a:hover {
+    color: #818181;
+  }
+
+  .bookday{
+    margin-top: 83px;
+    text-align: center;
+    font-family: "Bitter";
+    color: white;
+    font-weight: 500;
+  }
+
+  .some{
+    text-align: center;
+    font-family: "Bitter";
+    color: black;
+    font-weight: 800;
+    font-
+    > h2{
+      font-family: "Ubuntu";
+    }
+  }
+
+
+.red-indent {
+  text-indent: 40px; /* Размер отступа, который задает красную строку */
+  margin: 0; /* Избавляемся от внешних отступов у параграфа */
+}
+
+.red-indent br + * {
+  margin-left: 40px; /* Размер отрицательного отступа, чтобы создать красную строку */
+}
+
+
+  .transparent-header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .transparent-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+
+  .transparent-header nav ul li a:hover {
+    color: #818181;
+  }
+
+
+
+.text-content {
+  max-width: 400px; /* Регулируйте максимальную ширину текста по вашему усмотрению */
+}
+
+
+.text-content{
+  position: relative;
+  text-align: left;
+}
+
+
+@media (max-width: 768px){
+
+    .logo{
+      display:flex;
+      width: 100%; /* Make the logo span the full width */
+      justify-content: center; /* Center the content horizontally within the logo */
+      align-items: center;
+    }
+ .transparent-header nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Adjust as needed */
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1001; /* Higher than the header */
+    }
+
+  .transparent-header nav ul.show {
+    display: flex;
+  }
+
+  .transparent-header nav ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+      visibility: visible;
+      justify-content: center;
+      text-align: center;
+  }
+
+    .menu-toggle {
+      display: block;
+      сursor: pointer;
+      color: #fff;
+      font-size: 22px; /* Initially hide the toggle button */
+    }
+}
+
+.ots{
+  margin-top: 80px;
+    background-color: rgba(173, 160, 160, 0.6);
+    color: black;
+    > h2{
+      margin-top: 30px;
+    }
+    > h3{
+      margin-top: 30px;
+    }
+
+}
+
+.karta {
+    /* position: relative;
+    padding-bottom: 75%; /* Высота блока для поддержки соотношения сторон */ */
+    overflow: hidden;
+    max-width: 600px; /* Максимальная ширина для контейнера с картой */
+    margin: 0 auto;
+}
+
+.karta iframe {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width:100%;
+    height: 400px;
+}
+
+/* Дополнительные стили или медиазапросы для мобильной версии при необходимости */
+@media (max-width: 768px) {
+    .karta {
+        padding-bottom: 0; /* Сброс высоты для мобильной версии */
+    }
+}
+
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Стили для больших экранов (ширина больше 600px) */
+@media (min-width: 600px) {
+  .grid-container {
+    display: grid;
+    margin: 40px;
+    grid-template-columns: auto auto; /* Две ячейки в ряд */
+    gap: 20px; /* Расстояние между ячейками */
+  }
+
+  .grid-item img {
+    order: 1;
+   /* Изображение слева */
+  }
+
+  .grid-item p {
+    margin-top: 20px;
+    color:black;
+    font-weight: bolder;
+    order: 2; /* Текст справа */
+  }
+}
+
+.grid-item h3{
+  color: black;
+}
+
+/* Стили для маленьких экранов (ширина меньше 600px) */
+@media (max-width: 599px) {
+  .grid-container {
+    display: block; /* Элементы будут подряд (в столбце) */
+  }
+
+  .grid-item img{
+    width:200px;
+  }
+
+
+  .grid-item p {
+    width: 100%; /* Занимает всю ширину контейнера */
+  }
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;; /* Добавляем центрирование по горизонтали */
+    text-align: center; /* Убираем text-align */
+    position: relative;
+    top: 0;
+    left: 0; /* Убираем лишний margin-left */
+    width: 100%;  /* Добавляем фоновый цвет, чтобы текст был виден */
+    height: 40px;
+}
+
+
+.news img {
+    max-width: 100%;
+    height: auto;
+}
+
+.movie-container{
+  max-width: 2000px;
+  height: auto;
+  margin: 20px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .asd nav{
+      visibility: hidden;
+    }
+
+    .grid {
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+
+
+    .main {
+       padding: 0px;
+       padding-bottom: 10px;
+       text-align: center;
+   }
+   .main img {
+        max-width: 100%;
+        height: auto;
+    }
+   h1, h2, h3, h4 {
+       font-size: 24px; /* Уменьшаем размер заголовков */
+   }
+
+}
+
+
+h2 {
+    font-size: 24px; /* Reduce the size of the heading */
+}
+
+
+@media (max-width: 480px) {
+    .grid {
+          grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* 1 столбец на мобильных устройствах */
+    }
+  }
+}
+
+
+.pop {
+  text-align: center;
+  font-family: "Bitter";
+  color: white;
+  font-weight: 500;
+}
+
+.main > img {
+    text-align: center;
+    padding: 0px;
+    background-color: none;
+}
+
+
+
+
+.frame {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start; /* Center-align the button grid vertically within the frame */
+  height: auto;
+  width: 90%;
+  margin: 5px auto;
+  text-align: center;
+}
+
+button {
+  margin: 5px;
+}
+.custom-btn {
+  width: auto;
+  height: auto;
+  color: #fff;
+  margin: 5px 0;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  /* display: inline-block; */
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+  .grid > * {
+
+   margin: 20px 0px;
+
+ }
+
+ .grid img{
+   border-radius: 1px;
+      width:  100%;
+      height: 100%;
+      object-fit: cover;
+ }
+
+.item {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+   text-align: center;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: auto;
+  width: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 5px;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Минимальная высота равная высоте видимой части окна */
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+}
+
+.allbooks{
+  margin-top: 60px;
+}
+
+
+/* .grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+} */
+
+/* .item:hover img {
+    transform: scale(1.1);
+} */
+.second a{
+    background-color: #0066FF;
+    width: 600px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px; /* Remove the extra colon here */
+   display: inline-block;
+}
+
+.podbor{
+  margin-top: 0px;
+  padding: 0px 0px;
+  text-align:center;
+  font-family: "Bitter";
+  color: white;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-bottom: : 10px;
+  list-style-type: none;
+  border: 0px solid white;
+  border-radius: 1px 5px;
+  width: 100%;
+  text-align: center;
+  /* background-color: black; */
+  background-color: rgba(0, 0, 0, 0.7);
+  position:relative;
+  > a{
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    text-align:center;
+    color: #818181;
+  }
+
+
+}
+.podbor a:hover{
+  color: #f1f1f1;
+}
+
+.news{
+  margin-top: 60px;
+  padding: 0px 0px;
+  text-align:center;
+  font-family: "Bitter";
+  color: white;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-bottom: : 10px;
+  list-style-type: none;
+  border: 0px solid white;
+  border-radius: 1px 5px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  position:relative;
+  > a{
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    text-align:center;
+    color: #818181;
+  }
+}
+
+
+
+
+.section {
+  display: none;
+  padding: 2rem;
+
+  @media screen and (min-width: 768px) {
+    padding: 4rem;
+  }
+
+  @supports(display: grid) {
+    display: block;
+  }
+}
+
+
+.btn-3 {
+  background: rgb(0,172,238);
+/* background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%); */
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+
+}
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover{
+   background: transparent;
+  box-shadow: none;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+  width: 100%;
+}
+.btn-3 span:hover{
+   color: rgba(2,126,251,1);
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 100%;
+}
+.btn-3 span:hover:after {
+  width: 100%;
+}
+.news img{
+  text-align: center;
+  padding: 10px;
+  background-color: none;
+}
+
+.foot{
+  display: grid;
+
+  grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)) ; /* Добавлен столбец для Quick Links */
+  gap: 20px;
+  text-align:center;
+  font-family: "Bitter";
+  color: #818181;
+  align-items: center;
+  > a{
+    color: #818181;
+    text-decoration: none;
+  }
+}
+
+.btn {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #f74fb4;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .btn i {
+    line-height: 30px;
+    font-size:20px;
+    transition: 0.2s linear;
+
+  }
+  .btn:hover i {
+    transform:scale(1.3);
+    color:#f1f1f1;
+  }
+
+  .btn::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #f74fb4;
+    transform:rotate(45deg);
+    left: -110px;
+    top: 90%;
+  }
+  .btn:hover::before{
+    animation: anima 0.7s 1;
+    top: -10%;
+    left: -10%;
+  }
+  @keyframes anima{
+    0%{
+      left: -110%;
+      top: 90%;
+    }
+    50%{
+      left: 10%;
+      top: -30%;
+    }
+    100%{
+      top: -10%;
+      left: -10%;
+    }
+  }
+  .spaci{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+footer {
+  background-color: #111;
+  padding: 20px;
+}
+
+.contact-info > a,
+.quick-links > ul > li > a {
+  color: #818181;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-info h4,
+.quick-links h4 {
+  margin: 0;
+}
+
+/* .contact-info a[href^="tel"],
+.contact-info a[href^="mailto"] {
+  color: #818181;
+  text-decoration: none;
+} */
+
+.contact-info a{
+  color: #818181;
+  text-decoration: none;
+}
+
+.contact-info li {
+  margin: 10px 0;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links li {
+  margin: 10px 0;
+}
+
+/* Media query для адаптивности */
+
+@media (max-width: 768px) {
+  .foot {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+
+#counter{
+  position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    margin: 10px;
+    font-size: 20px;
+}
